@@ -115,7 +115,7 @@ const ServiceList = [
   },
 ];
 
-const Servicepage = () => {
+const ServicePage = () => {
   return (
     <div>
       <div className="container mx-auto">
@@ -147,4 +147,4 @@ const Servicepage = () => {
   );
 }
 
-export default Servicepage
+export default ServicePage
