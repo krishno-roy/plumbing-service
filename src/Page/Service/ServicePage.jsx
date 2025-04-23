@@ -3,6 +3,7 @@ import { GrSettingsOption } from 'react-icons/gr';
 import OurTeam from '../Home/OurTeam';
 import Testimonial from '../Home/Testimonial';
 import Blog from '../Home/Blog';
+import BannerImg from "../../assets/banner-2.png";
 
 const ServiceList = [
   {
@@ -118,6 +119,26 @@ const ServiceList = [
 const ServicePage = () => {
   return (
     <div>
+      <div
+        className="relative py-20 bg-cover bg-no-repeat"
+        style={{ backgroundImage: `url(${BannerImg})` }}
+      >
+        {/* Gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-pink-600/70 to-gray-300/70"></div>
+
+        {/* Content on top of gradient */}
+        <div className="relative z-10 text-white container mx-auto px-12">
+          <h1 className="text-6xl font-bold text-yellow-400 md:text-left text-center">
+            Our Services
+          </h1>
+          <p className="mt-4 text-lg md:w-xl text-center md:text-left">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book
+          </p>
+        </div>
+      </div>
       <div className="container mx-auto">
         <div className="w-xl mx-auto text-center py-7 space-y-3 pt-12">
           <h2 className="text-3xl font-bold uppercase">Our Services</h2>
@@ -140,8 +161,8 @@ const ServicePage = () => {
           ))}
         </div>
         <OurTeam />
-        <Testimonial/>
-        <Blog/>
+        <Testimonial />
+        <Blog />
       </div>
     </div>
   );

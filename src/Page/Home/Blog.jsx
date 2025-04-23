@@ -1,7 +1,7 @@
 import React from 'react';
-import BlogImg1 from "../../assets/Blog-1.png";
-import BlogImg2 from "../../assets/Blog-2.png";
-import BlogImg3 from "../../assets/Blog-3.png";
+import BlogImg1 from "../../assets/Blog1.png";
+import BlogImg2 from "../../assets/Blog2.png";
+import BlogImg3 from "../../assets/Blog3.png";
 
 const BlogList = [
   {
